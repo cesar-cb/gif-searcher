@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Giphy Searcher</title>
+  <link rel="icon" href="favicon.gif" type="image/gif">
+  <link rel="stylesheet" href="./src/styles/index.styl">
+</head>
+
+<body>
+  <div id="loadingContainer">
+    <div class="loading"></div>
+  </div>
+  <main class="container">
+    <h1 class="main-title">Giphy Searcher 🔝🦄🔥</h1>
+    <form class="form">
+      <input type="text" id="searchTerm" class="input" placeholder="Search" autofocus>
+      <button class="button" id="searchGif">Search</button>
+    </form>
+
+    <article id="imageContainer" class="imageHolder">
+      <img alt="" id="gifImage">
+    </article>
+  </main>
+</body>
+
+<script src="./src/scripts/index.js"></script>
+
+</html>
