@@ -1,0 +1,112 @@
+$light = #72A7A3
+$medium = #41848F
+$dark = #0A1C28
+
+html,
+body
+  margin 0
+  padding 0
+  font-size 12px
+
+  @media screen and (min-width 800px)
+    font-size 14px
+
+
+  @media screen and (min-width 1200px)
+    font-size: 16px
+
+body
+  align-items center
+  background-color $dark
+  display flex
+  font-family monospace
+  justify-content center
+  min-height 100vh
+
+img 
+  max-width 100%
+
+.container
+  max-width 1200px;
+  width 100%
+  padding 0 2em
+
+.main-title
+  color $light
+  text-align center
+  font-size 2rem
+
+.form
+  align-items: flex-end;
+  display flex
+  justify-content center
+  width 100%
+  > .input
+    -webkit-appearance: none
+    background-color transparent
+    border none
+    border-bottom 2px solid $medium
+    border-radius 0
+    color $light
+    display inline-block
+    font-family inherit
+    font-size 2rem
+    margin-right 20px
+    max-width 600px
+    padding 20px
+    vertical-align bottom
+    width 100%
+    &:focus
+      outline none
+    
+
+  > .button
+    background-color transparent
+    border 1px solid $medium
+    border-radius 3px
+    color $light
+    cursor pointer
+    display inline-block
+    font-family inherit
+    font-size 1.2rem
+    height min-content
+    padding 10px 25px
+    transition background-color 1s ease
+    vertical-align bottom
+
+    &:hover
+      background-color $medium;
+      color $light
+
+.imageHolder
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+#loadingContainer
+  align-items center
+  background rgba(0,0,0,0.9);
+  bottom 0
+  display none
+  height 100%
+  justify-content center
+  left 0
+  position absolute
+  right 0
+  top 0
+  width 100%
+  
+  .loading
+    animation spin 1s linear infinite
+    border 16px solid $dark
+    border-radius 50%
+    border-top 16px solid $medium;
+    height 120px
+    width 120px
+    
+@keyframes spin
+  from
+    transform rotate(0deg)
+
+  to
+    transform rotate(360deg)
