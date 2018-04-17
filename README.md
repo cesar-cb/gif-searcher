@@ -5,7 +5,7 @@
 * `yarn install`
 * `yarn start`
 
-
 ## TODO:
 
-- [ ] UI Test
+* [x] UI Test
+* [ ] Unit Test
