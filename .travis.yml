@@ -4,5 +4,9 @@ node_js:
 cache:
   directories:
     - "node_modules"
+sudo: true
+before_script:
+  - "yarn start"
+  - sleep 3
 addons:
   chrome: stable
