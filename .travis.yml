@@ -6,7 +6,6 @@ cache:
     - "node_modules"
 sudo: true
 before_script:
-  - "yarn start"
-  - sleep 3
+  - yarn start &
 addons:
   chrome: stable
