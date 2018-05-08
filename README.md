@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cesar-cb/gif-searcher.svg?branch=master)](https://travis-ci.org/cesar-cb/gif-searcher)
+
 # Gif Searcher
 
 A simple random gif searcher based on search term
