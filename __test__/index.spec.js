@@ -15,6 +15,7 @@ const search = {
 
 beforeAll(async () => {
 	const debugMode = process.env.NODE_ENV === 'debug';
+
 	browser = await puppeteer.launch({
 		headless: !debugMode,
 		slowMo: debugMode ? 50 : 0,
@@ -24,7 +25,9 @@ beforeAll(async () => {
 			'--disable-setuid-sandbox',
 		],
 	});
+
 	page = await browser.newPage();
+
 	page.setViewport({ width, height });
 });
 
